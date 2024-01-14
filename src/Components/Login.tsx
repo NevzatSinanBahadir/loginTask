@@ -1,7 +1,7 @@
 import React, { useState, FormEvent } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
-// State değişkenleri için tip tanımlamalarını içeren bir arayüz oluşturuyoruz
+// State değişkenleri için tip tanımlamalarını oluşturdum
 interface ILoginState {
   name: string;
   password: string;
@@ -10,7 +10,7 @@ interface ILoginState {
 }
 
 const Login: React.FC = () => {
-  // State değişkenlerini tanımladığımız arayüzü kullanarak oluşturuyoruz
+ 
   const [state, setState] = useState<ILoginState>({
     name: "",
     password: "",
@@ -20,14 +20,14 @@ const Login: React.FC = () => {
 
   const navigate = useNavigate();
 
-  // Event parametresi için tip tanımını belirtiyoruz
+  // Event parametresi için tip tanımını belirttim
   const authentication = (e: FormEvent) => {
     e.preventDefault();
 
-    // State değişkenlerini ayrıştırıyoruz
+    // State değişkenlerini ayrıştırdım
     const { name, password } = state;
 
-    // Hata mesajlarını sıfırlıyoruz
+    // Hata mesajlarını sıfırladım
     setState((prevState) => ({
       ...prevState,
       usernameIsIncorrect: "",
