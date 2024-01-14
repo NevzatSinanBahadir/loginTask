@@ -48,14 +48,14 @@ const Home: React.FC = () => {
   }, [data]);
 
   const handleIncrement = (index: number) => {
-    // Belirli bir öğenin sayaç değerini artır
+
     const newCount = [...count];
     newCount[index] += 1;
     setCount(newCount);
   };
 
   const handleDecrement = (index: number) => {
-    // Belirli bir öğenin sayaç değerini azalt
+   
     const newCount = [...count];
     if (newCount[index] > 0) {
       newCount[index] -= 1;

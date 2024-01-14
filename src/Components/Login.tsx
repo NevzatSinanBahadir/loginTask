@@ -35,16 +35,16 @@ const Login: React.FC = () => {
     }));
 
     if (name === "sinan" && password === "1234") {
-      console.log("Giriş başarılı");
+     
       navigate("/home");
     } else if (name === "sinan" && password !== "1234") {
-      console.log("Şifre Hatalı");
+      
       setState((prevState) => ({
         ...prevState,
         passwordIsIncorrect: "Şifre Hatalı",
       }));
     } else {
-      console.log("Böyle bir kullanıcı bulunamadı");
+      
       setState((prevState) => ({
         ...prevState,
         usernameIsIncorrect: "Böyle bir kullanıcı bulunamadı",
