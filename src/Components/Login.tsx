@@ -118,11 +118,11 @@ const Login: React.FC = () => {
           </form>
         </div>
 
-        <div className="grid col-span-1 content-center place-content-center bg-[#FFD196] elma">
+        <div className="grid col-span-1 content-center place-content-center bg-[#FFD196] hide">
           <img
             className="h-screen object-contain"
             src="https://cdn.webrazzi.com/uploads/2019/11/shutterstock-781560955-880_hd.jpeg"
-            alt="Elma"
+            
           />
         </div>
       </div>
