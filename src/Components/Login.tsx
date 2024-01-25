@@ -20,11 +20,10 @@ const Login: React.FC = () => {
 
   const navigate = useNavigate();
 
-  // Event parametresi için tip tanımını belirttim
+  
   const authentication = (e: FormEvent) => {
     e.preventDefault();
 
-    // State değişkenlerini ayrıştırdım
     const { name, password } = state;
 
     // Hata mesajlarını sıfırladım

@@ -32,10 +32,10 @@ const Home: React.FC = () => {
         if (Array.isArray(response.data)) {
           setData(response.data);
         } else {
-          console.error('API response does not contain an array:', response.data);
+          console.error('Bir dizi içermiyor', response.data);
         }
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Veriler getirilirken hata oluştu', error);
       }
     };
 
